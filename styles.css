@@ -1,0 +1,128 @@
+/* ===== Book Haven Bookstore Theme ===== */
+:root{
+  --ink: #131C26;        /* Bookish Black (font color) */
+  --primary: #2E2E4E;    /* Midnight Manuscript */
+  --accent: #5C2E5C;     /* Regal Quill */
+  --muted: #C1CFD6;      /* Vintage Paper */
+  --support1: #3F5461;   /* Literature Blue */
+  --support2: #3E5641;   /* Book Worm */
+  --support3: #742C36;   /* Romantic Red */
+}
+
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: Comfortaa, Arial, sans-serif; /* Body: Comfortaa Normal 15px */
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+header{
+  padding: 16px 20px;
+  border-bottom: 3px solid var(--muted);
+}
+
+header img{ vertical-align: middle; }
+
+h1{
+  margin: 10px 0 8px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;      /* Arial Bold */
+  font-size: 30px;       /* H1 */
+  color: var(--ink);
+}
+
+h2{
+  margin-top: 26px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;      /* Arial Bold */
+  font-size: 25px;       /* H2 */
+  color: var(--primary);
+}
+
+nav{
+  margin-top: 8px;
+  padding: 10px 0;
+}
+
+nav a{
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  background: var(--muted);
+}
+
+main{
+  max-width: 980px;
+  padding: 18px 20px 30px;
+}
+
+footer{
+  border-top: 3px solid var(--muted);
+  padding: 14px 20px;
+  font-family: Calibri, Arial, sans-serif;  /* Footer typography */
+  font-size: 16px;
+}
+
+.small{
+  font-size: 11px;
+}
+
+/* ===== Gallery Layout ===== */
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td{
+  padding: 14px;
+  vertical-align: top;
+  border: 1px solid var(--muted);
+}
+
+td img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+button{
+  background: var(--primary);
+  color: white;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Comfortaa, Arial, sans-serif;
+}
+
+button:hover{ background: var(--accent); }
+
+/* ===== Form ===== */
+label{ font-weight: 600; }
+
+input, textarea, select{
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px;
+  border: 1px solid var(--muted);
+  border-radius: 8px;
+  font-family: Comfortaa, Arial, sans-serif;
+}
+
+/* ===== Simple RWD (Responsive) ===== */
+@media (max-width: 700px){
+  main{ padding: 14px; }
+  nav a{ display: inline-block; margin-bottom: 6px; }
+  table, tbody, tr, td{ display: block; width: 100%; }
+}

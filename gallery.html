@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Haven Bookstore | Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Book Haven Bookstore logo" width="90" />
+    </a>
+    <h1>Book Haven Bookstore</h1>
+
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="about.html">About Us / Contact</a> |
+      <a href="community.html">Community</a>
+      <button type="button" id="viewCartBtn">View Cart</button>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <h2>Gallery</h2>
+    <p>Browse featured items below (buttons are for layout only in this task).</p>
+
+    <table border="1" cellpadding="10">
+      <tr>
+        <td align="center">
+          <img src="images/Client3_Book1.png" alt="Featured Book 1" width="180" /><br />
+          <p><strong>Featured Book 1</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Featured Book 1" data-img="images/Client3_Book1.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>         
+        </td>
+
+        <td align="center">
+          <img src="images/Client3_Book2.png" alt="Featured Book 2" width="180" /><br />
+          <p><strong>Featured Book 2</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Featured Book 2" data-img="images/Client3_Book2.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>     
+        </td>
+
+        <td align="center">
+          <img src="images/Client3_Book3.png" alt="Featured Book 3" width="180" /><br />
+          <p><strong>Featured Book 3</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Featured Book 3" data-img="images/Client3_Book3.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>     
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">
+          <img src="images/Client3_Magazine1.png" alt="Magazine 1" width="180" /><br />
+          <p><strong>Magazine 1</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Magazine 1" data-img="images/Client3_Magazine1.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>    
+        </td>
+
+        <td align="center">
+          <img src="images/Client3_Magazine2.png" alt="Magazine 2" width="180" /><br />
+          <p><strong>Magazine 2</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Magazine 2" data-img="images/Client3_Magazine2.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>   
+        </td>
+
+        <td align="center">
+          <img src="images/Client3_Magazine3.png" alt="Magazine 3" width="180" /><br />
+          <p><strong>Magazine 3</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Magazine 3" data-img="images/Client3_Magazine3.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>      
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">
+          <img src="images/Client3_Notebook.png" alt="Notebook" width="180" /><br />
+          <p><strong>Notebook</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Notebook" data-img="images/Client3_Notebook.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>     
+        </td>
+
+        <td align="center">
+          <img src="images/Client3_Stickers.png" alt="Stickers" width="180" /><br />
+          <p><strong>Stickers</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Stickers" data-img="images/Client3_Stickers.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>    
+        </td>
+
+        <td align="center">
+          <img src="images/Client3_ToteBag.png" alt="Tote Bag" width="180" /><br />
+          <p><strong>Tote Bag</strong></p>
+          <button type="button" class="addToCartBtn" data-name="Totebag" data-img="images/Client3_ToteBag.png">Add to Cart</button>
+          <button type="button" class="clearCartBtn">Clear Cart</button>
+          <button type="button" class="processOrderBtn">Process Order</button>    
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <hr />
+    <p><strong>Book Haven Bookstore</strong> — Books, journals, and cozy local vibes.</p>
+    <p>Questions? Visit <a href="about.html">About Us / Contact</a>.</p>
+    <button id="subscribeBtn" type="button">Subscribe</button>
+  </footer>
+
+  <!-- Modal Window (for Touchstone Assignment) -->
+  <div id="cartModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5);">
+    <div style="background:#fff; max-width:700px; margin:60px auto; padding:20px;">
+      <h2>Shopping Cart</h2>
+
+      <div id="cartItems"></div>
+
+      <hr>
+
+      <button type="button" id="modalClearCartBtn">Clear Cart</button>
+      <button type="button" id="modalProcessOrderBtn">Process Order</button>
+      <button type="button" id="closeCartBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

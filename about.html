@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Haven Bookstore | About Us / Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Book Haven Bookstore logo" width="90" />
+    </a>
+    <h1>Book Haven Bookstore</h1>
+
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="about.html">About Us / Contact</a> |
+      <a href="community.html">Community</a>
+      <button type="button" id="viewCartBtn">View Cart</button>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <h2>About Us</h2>
+    <p>
+      Book Haven Bookstore is a locally owned shop built for curious readers and busy students.
+      We believe bookstores should feel welcoming, inspiring, and easy to explore.
+    </p>
+
+    <h3>Visit & Contact</h3>
+    <ul>
+      <li><strong>Address:</strong> 123 Paper St, Your City, CA (placeholder)</li>
+      <li><strong>Phone:</strong> (555) 555-5555</li>
+      <li><strong>Email:</strong> hello@bookhaven.example</li>
+      <li><strong>Hours:</strong> Mon–Sat 10am–6pm | Sun 12pm–5pm</li>
+    </ul>
+
+    <h2>Feedback & Custom Orders</h2>
+    <p>Use this form to send feedback or request a special order (placeholder for Touchstone).</p>
+
+    <form id="contactForm" action="#" method="post">
+      <form id="contactForm" action="#" method="post">
+        <fieldset>
+          <legend>Customer Information</legend>
+
+          <label for="name">Full Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="phone">Phone (optional):</label><br />
+          <input type="tel" id="phone" name="phone" /><br /><br />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Message Type</legend>
+
+          <input type="radio" id="feedback" name="messageType" value="feedback" checked />
+          <label for="feedback">General Feedback</label><br />
+
+          <input type="radio" id="customorder" name="messageType" value="customorder" />
+          <label for="customorder">Custom Order Request</label><br />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Custom Order Details (if applicable)</legend>
+
+          <label for="item">Item Requested (title/product):</label><br />
+          <input type="text" id="item" name="item" /><br /><br />
+
+          <label for="quantity">Quantity:</label><br />
+          <input type="number" id="quantity" name="quantity" min="1" /><br /><br />
+
+          <label for="deadline">Preferred Pickup Date:</label><br />
+          <input type="date" id="deadline" name="deadline" /><br /><br />
+        </fieldset>
+
+        <br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="6" cols="40" required></textarea><br /><br />
+
+        <button type="submit" id="contactSubmitBtn">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+
+    </form>
+  </main>
+
+  <footer>
+    <hr />
+    <p><strong>Book Haven Bookstore</strong> — Thanks for supporting local.</p>
+    <button id="subscribeBtn" type="button">Subscribe</button>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
